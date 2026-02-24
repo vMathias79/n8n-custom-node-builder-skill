@@ -85,6 +85,8 @@ Before each lifecycle step, load the matching local file from `references/`.
 
 ## Workflow Router
 
+### 0) Kickoff and context
+
 Load:
 
 - `references/README.md`
