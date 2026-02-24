@@ -1,0 +1,4 @@
+interface:
+  display_name: "n8n Custom Node Builder Skill"
+  short_description: "Plan, build, test, and deploy n8n custom nodes"
+  default_prompt: "Use $n8n-custom-node-builder-skill to plan, implement, test, verify, and deploy n8n custom nodes and credentials following official n8n guidance."
