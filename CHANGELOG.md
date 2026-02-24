@@ -9,8 +9,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.1] - 2026-02-24
 
+### Added
+
+- `SKILL.md`: Build Lifecycle ASCII flow diagram showing the full node build pipeline.
+- `SKILL.md`: Quick Reference table for instant routing to the correct reference file.
+- `SKILL.md`: Start Here section with six contextual entry paths by task type.
+- `tests/README.md`: RED-GREEN testing methodology and scenario index.
+- `tests/scenarios/01-new-declarative-node.md`: Test scenario — build a declarative node end-to-end.
+- `tests/scenarios/02-declarative-vs-programmatic.md`: Test scenario — style decision for multiple use cases.
+- `tests/scenarios/03-credentials-implementation.md`: Test scenario — API key and Basic Auth credential implementation.
+- `tests/scenarios/04-verification-prep.md`: Test scenario — pre-submission checklist for n8n community verification.
+- `tests/scenarios/05-private-docker-install.md`: Test scenario — private Docker-based node installation.
+- `CHANGELOG.md`: Version history in Keep a Changelog format.
+
 ### Changed
 
+- Skill renamed from "n8n Node Builder" to "n8n Custom Node Builder Skill" across all files.
+- Removed all Claude Code references; skill is now platform-agnostic and compatible with any agent that supports skills.
+- `README.md`: Improved for GitHub public project — added badges, prerequisites, multiple usage examples, Contributing and Changelog sections; added `npx skills add` install command for skills.sh.
+- `SKILL.md`: Updated author username to `vMathias79` throughout.
+- `.gitignore`: Expanded to cover macOS, Windows, editors (VS Code, JetBrains, Vim), and environment files.
 - `references/04-declarative.md`: Added `usableAsTool: true` property, `NodeConnectionTypes` import note, and icon guidelines (SVG preferred; PNG must be 60×60px).
 - `references/05-programmatic.md`: Added `usableAsTool: true`; documented `IHttpRequestOptions`, `httpRequestWithAuthentication`, `constructExecutionMetaData`, and `continueOnFail()` patterns.
 - `references/06-node-file-structure.md`: Added `n8n-node` CLI scaffolding recommendation; clarified `actions/` sub-structure (`<resourceName>.resource.ts` + `<operationName>.operation.ts` exports).
@@ -43,6 +61,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `AGENTS.md`: Contributor instructions.
 - `README.md`: Project overview, installation, and structure documentation.
 
-[Unreleased]: https://github.com/YOUR_USERNAME/n8n-custom-node-builder-skill/compare/v1.0.1...HEAD
-[1.0.1]: https://github.com/YOUR_USERNAME/n8n-custom-node-builder-skill/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/YOUR_USERNAME/n8n-custom-node-builder-skill/releases/tag/v1.0.0
+[Unreleased]: https://github.com/vMathias79/n8n-custom-node-builder-skill/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/vMathias79/n8n-custom-node-builder-skill/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/vMathias79/n8n-custom-node-builder-skill/releases/tag/v1.0.0

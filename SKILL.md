@@ -17,9 +17,73 @@ Before each lifecycle step, load the matching local file from `references/`.
 - Do not browse external docs unless local references are stale or missing a required detail.
 - If any reference is stale (older than 45 days), refresh only the changed files and update timestamps.
 
-## Workflow Router
+## Build Lifecycle
 
-### 0) Kickoff and context
+```
+[Plan Scope] ──→ [Choose Style] ──────────────────┐
+                       │                          │
+               [Declarative]              [Programmatic]
+               routing-based              execute() method
+               (references/04)            (references/05)
+                       │                          │
+                       └──────────┬───────────────┘
+                                  ↓
+                    [UI Parameters] → [Credentials] → [Codex]
+                    (ref/07)          (ref/08)         (ref/09)
+                                  ↓
+                            [Test + Lint]
+                            (ref/10)
+                                  ↓
+                  ┌───────────────┴──────────────────┐
+                  ↓                                  ↓
+       [Community Deploy]                   [Private Install]
+       (ref/11)                             (ref/13)
+                  ↓
+       [Verification?]
+         ↓         ↓
+       [Yes]      [No]
+     (ref/12)  (npm publish)
+```
+
+## Quick Reference
+
+| Need to… | Load |
+|----------|------|
+| Overview and prerequisites | [`references/01-overview.md`](./references/01-overview.md) |
+| Plan node scope, auth, and error handling | [`references/02-planning.md`](./references/02-planning.md) |
+| Choose declarative vs programmatic style | [`references/03-approach-selection.md`](./references/03-approach-selection.md) |
+| Build a declarative node | [`references/04-declarative.md`](./references/04-declarative.md) |
+| Build a programmatic or trigger node | [`references/05-programmatic.md`](./references/05-programmatic.md) |
+| Validate package file structure | [`references/06-node-file-structure.md`](./references/06-node-file-structure.md) |
+| Design UI parameters and field types | [`references/07-ui-elements.md`](./references/07-ui-elements.md) |
+| Implement credentials and auth injection | [`references/08-credentials.md`](./references/08-credentials.md) |
+| Configure codex metadata | [`references/09-codex.md`](./references/09-codex.md) |
+| Test and lint locally | [`references/10-testing.md`](./references/10-testing.md) |
+| Publish to npm community | [`references/11-community-deploy.md`](./references/11-community-deploy.md) |
+| Prepare for n8n verification | [`references/12-verification-guidelines.md`](./references/12-verification-guidelines.md) |
+| Install privately (Docker/global) | [`references/13-private-install.md`](./references/13-private-install.md) |
+
+## Start Here
+
+**Building a new node from scratch?**
+→ Start at step 0 (Kickoff), follow the full workflow 0 → 9.
+
+**Adding or fixing credentials only?**
+→ Jump to step 6. Load `references/08-credentials.md`.
+
+**Extending an existing node?**
+→ Start at step 2 (Choose Style), then step 3 (Build).
+
+**Preparing for n8n community verification?**
+→ Jump to step 9 (Community path). Load `references/12-verification-guidelines.md` and `references/11-community-deploy.md`.
+
+**Installing a built node privately (Docker)?**
+→ Jump to step 9 (Private path). Load `references/13-private-install.md`.
+
+**Node not appearing in n8n / debugging?**
+→ Jump to step 8 (Test). Load `references/10-testing.md`.
+
+## Workflow Router
 
 Load:
 

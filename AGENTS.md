@@ -7,6 +7,7 @@ This is an agentic skill. The main skill definition lives in `SKILL.md`.
 - `SKILL.md` — Skill definition (frontmatter + workflow)
 - `references/` — Curated snapshots of n8n creating-nodes documentation
 - `agents/` — Alternative agent interface definitions (e.g. OpenAI)
+- `tests/` — RED-GREEN test scenarios for skill validation
 
 ## Updating References
 
