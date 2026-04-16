@@ -1,7 +1,7 @@
 # Node UI Elements (Curated)
 
 - Source URL: https://docs.n8n.io/integrations/creating-nodes/build/reference/ui-elements/
-- Retrieved At (UTC): 2026-02-24T09:30:52Z
+- Retrieved At (UTC): 2026-04-16T08:48:00Z
 - Scope: Parameter schema patterns and UI component selection.
 
 ## Core Field Shape
@@ -36,6 +36,7 @@ Use `displayOptions.show/hide` to scope fields to specific resources/operations.
 - hints/dynamic hints
 - `filter`
 - `assignmentCollection` (drag-and-drop name/value mapping)
+- HTML editor (via `type: 'string'` plus `typeOptions: { editor: 'htmlEditor' }`, typically combined with `noDataExpression: true`)
 
 ## Data Mapping UX
 
