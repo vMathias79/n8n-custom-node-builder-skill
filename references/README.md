@@ -4,7 +4,7 @@ These local references are curated snapshots of the n8n creating-nodes documenta
 
 ## Retrieval Metadata
 
-- Retrieved At (UTC): 2026-02-24T09:30:52Z
+- Retrieved At (UTC): 2026-04-16T08:48:00Z
 - Scope: n8n creating-nodes lifecycle (plan, build, test, verify, deploy)
 
 ## When to Load Which File

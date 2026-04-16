@@ -192,7 +192,7 @@ Load:
 Do:
 
 - Run manual local tests.
-- Run lint checks (`npm run lint`, `npm run lintfix`).
+- Run lint checks (`npm run lint`, `npm run lint:fix`).
 - Address common issues (missing registration, credential mismatch, icon path/type, stale local process).
 
 ### 9) Deploy

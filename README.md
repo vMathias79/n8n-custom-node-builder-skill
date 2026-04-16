@@ -1,7 +1,7 @@
 # n8n Custom Node Builder Skill
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![References updated](https://img.shields.io/badge/references%20updated-2026--02--24-blue)](#reference-docs)
+[![References updated](https://img.shields.io/badge/references%20updated-2026--04--16-blue)](#reference-docs)
 
 > An agentic skill that guides you through the full lifecycle of building n8n custom nodes — from planning through deployment. Compatible with any AI agent that supports skills.
 

@@ -5,8 +5,6 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
-
 ## [1.0.2] - 2026-04-16
 
 ### Changed
@@ -16,6 +14,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `references/11-community-deploy.md`: Added "Publishing to npm" section required for Creator Portal verification from May 1st 2026 — `npm create @n8n/node` scaffold, `npm run release` trigger, `@n8n/node-cli` >= 0.23.0 devDependency, npmjs.com Trusted Publishers (GitHub Actions) setup with `NPM_TOKEN` fallback; noted paid/enterprise competition rejection clause.
 - `references/12-verification-guidelines.md`: Added one-third-party-service-per-package constraint (trigger for the same service allowed; proxies/multi-service packages rejected); added Package Source Verification section (npm repo URL must match GitHub, author consistency, public git link, MIT, GitHub Actions publish with provenance).
 - Refreshed 4 reference snapshots per 45-day freshness policy; unchanged files (`01`–`06`, `08`, `09`, `13`) left untouched.
+
+### Fixed
+
+- `SKILL.md`: Corrected lint command to `npm run lint:fix` to match refreshed `references/10-testing.md`.
+- `README.md`: Bumped "references updated" badge date to 2026-04-16.
+- `references/README.md`: Bumped top-level `Retrieved At (UTC)` watermark to 2026-04-16T08:48:00Z to reflect the refresh cycle.
 
 ### Removed
 
@@ -75,7 +79,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `AGENTS.md`: Contributor instructions.
 - `README.md`: Project overview, installation, and structure documentation.
 
-[Unreleased]: https://github.com/vMathias79/n8n-custom-node-builder-skill/compare/v1.0.2...HEAD
 [1.0.2]: https://github.com/vMathias79/n8n-custom-node-builder-skill/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/vMathias79/n8n-custom-node-builder-skill/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/vMathias79/n8n-custom-node-builder-skill/releases/tag/v1.0.0
