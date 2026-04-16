@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.3] - 2026-04-16
+
+### Fixed
+
+- `references/06-node-file-structure.md`: Corrected scaffolder package name. Previous snapshot referenced `npx @n8n/n8n-node create`, but that package does not exist on npm (404). Replaced with the official scaffolder `npx @n8n/create-node@latest` (verified on npm 2026-04-16: description "Official CLI to create new community nodes for n8n", latest 0.22.1, last modified 2026-04-13). Reported by downstream agentic AI consumer.
+
 ## [1.0.2] - 2026-04-16
 
 ### Changed

@@ -6,13 +6,15 @@
 
 ## Scaffolding
 
-n8n recommends using the `n8n-node` CLI tool to create the expected file structure:
+n8n publishes an official scaffolder as `@n8n/create-node`. Run it via `npx`:
 
 ```shell
-npx @n8n/n8n-node create
+npx @n8n/create-node@latest
 ```
 
 This generates the correct package layout and wires up `package.json` automatically. Customize the scaffold as needed for more complex structures.
+
+> Package verified on npm 2026-04-16: `@n8n/create-node` (description: "Official CLI to create new community nodes for n8n", latest 0.22.1, last modified 2026-04-13). The previously-referenced `@n8n/n8n-node` package does not exist on npm (404).
 
 ## Required Structure
 
